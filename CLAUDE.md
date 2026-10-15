@@ -14,7 +14,8 @@ Site vitrine **fictif** réalisé par BALD (agence web, Rennes) comme exemple de
 - `mentions-legales.html` : mentions fictives + crédits photos/polices.
 - `css/style.css`, `js/main.js` (formulaire factice uniquement).
 - `fonts/` : Barlow Condensed (titres) et Source Sans 3 (texte), WOFF2, licence OFL.
-- `img/` : photos Unsplash redimensionnées (1400 px, JPEG).
+- `img/` : 3 photos Unsplash redimensionnées (1400 px, JPEG).
+- `docs/critique-et-references.md` : critique impeccable et références de la passe qualité.
 - `captures/` : captures d'écran pour la page Réalisations du site BALD.
 
 ## Direction artistique
@@ -22,3 +23,8 @@ Bleu marine (#0b2545) et blanc, accent ambre (#f5b700) réservé aux boutons d'a
 
 ## Aperçu local
 `python3 -m http.server 8080` dans ce dossier, puis http://localhost:8080
+
+## Offre illustrée : Site vitrine Essentiel (790 €)
+Une seule page, sans CMS ni espace de modification, sans nouvelle page (hors mentions légales). Ne pas ajouter de pages, de blog ni d'outil d'édition : ce site sert à montrer la différence avec l'offre Pro (démo boulangerie).
+Les engagements (délai, horaires, garanties) sont des exemples étiquetés comme tels ; aucun label, certification ou avis inventé.
+Mouvement : apparitions discrètes uniquement, désactivées par `prefers-reduced-motion` ; la page reste lisible sans JavaScript.
