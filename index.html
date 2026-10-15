@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Keranvel Plomberie Chauffage — Plombier à Rennes (site de démonstration)</title>
-  <meta name="description" content="Démonstration : site vitrine d'un plombier-chauffagiste indépendant à Rennes et dans un rayon de 30 km. Entreprise fictive.">
+  <meta name="description" content="Démonstration d'un site vitrine Essentiel : plombier-chauffagiste indépendant à Rennes et dans un rayon de 30 km. Entreprise fictive.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#0b2545">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b2545'/%3E%3Cpath d='M16 6c4 6 7 9 7 13a7 7 0 0 1-14 0c0-4 3-7 7-13z' fill='%23f5b700'/%3E%3C/svg%3E">
   <link rel="preload" href="fonts/BarlowCondensed-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
@@ -18,7 +19,7 @@
   <header class="site-header">
     <div class="wrap header-in">
       <a class="brand" href="#top" aria-label="Keranvel Plomberie Chauffage, accueil">
-        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c5 7 8 10.500 8 15a8 8 0 0 1-16 0c0-4.500 3-8 8-15z" fill="#f5b700"/></svg>
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c5 7 8 10.500 8 15a8 8 0 0 1-16 0c0-4.500 3-8 8-15z" fill="#f5b700"/></svg>
         <span>Keranvel <small>Plomberie · Chauffage</small></span>
       </a>
       <nav aria-label="Navigation principale" class="nav">
@@ -28,7 +29,17 @@
         <a href="#artisan">L'artisan</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-call btn-sm" href="tel:+33200000000">Appeler <span class="hide-sm">02 00 00 00 00</span></a>
+      <a class="btn btn-call btn-sm nav-call" href="tel:+33200000000">Appeler <span>02 00 00 00 00</span></a>
+      <details class="menu">
+        <summary>Menu<span class="menu-ico" aria-hidden="true"></span></summary>
+        <nav aria-label="Navigation principale (mobile)">
+          <a href="#services">Services</a>
+          <a href="#urgences">Urgences</a>
+          <a href="#zone">Zone d'intervention</a>
+          <a href="#artisan">L'artisan</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </details>
     </div>
   </header>
 
@@ -36,18 +47,14 @@
     <section class="hero" id="top">
       <div class="wrap hero-in">
         <div class="hero-text">
-          <p class="eyebrow">Plombier-chauffagiste indépendant · Rennes et 30 km autour</p>
+          <p class="where">Plombier-chauffagiste · Rennes et 30 km autour</p>
           <h1>Une fuite, une panne de chauffage ? J'interviens vite.</h1>
-          <p class="lead">Dépannage, installation sanitaire, chauffage et chauffe-eau. Un seul interlocuteur, un devis clair avant de commencer.</p>
+          <p class="lead">Dépannage, installation sanitaire, chauffage et chauffe-eau. Un seul artisan au bout du fil, un devis clair avant de commencer.</p>
           <a class="btn btn-call btn-xl" href="tel:+33200000000">
-            <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.600 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.25 11.400 11.400 0 0 0 3.600.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.250.2 2.450.57 3.600a1 1 0 0 1-.25 1z"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.600 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.25 11.400 11.400 0 0 0 3.600.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.250.2 2.450.57 3.600a1 1 0 0 1-.25 1z"/></svg>
             <span><strong>Appeler maintenant</strong><em>02 00 00 00 00</em></span>
           </a>
-          <ul class="ticks">
-            <li>Réponse sous 1 heure en journée</li>
-            <li>Devis gratuit</li>
-            <li>Garantie sur les travaux</li>
-          </ul>
+          <a class="hero-link" href="#urgences">Fuite en cours ? Les bons gestes en attendant</a>
         </div>
         <figure class="hero-img">
           <img src="img/siphon.jpg" width="1400" height="1050" alt="Plombier en train de resserrer le siphon d'un évier" fetchpriority="high">
@@ -55,39 +62,79 @@
       </div>
     </section>
 
+    <section class="trust" aria-labelledby="t-trust">
+      <div class="wrap">
+        <h2 id="t-trust" class="sr-only">Mes engagements</h2>
+        <ul class="trust-list">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg>
+            <span><strong>Devis gratuit</strong> et écrit avant tout travail</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span><strong>Sous 1 h en journée</strong> pour une urgence dans la zone</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9H3zM9 20v-5h6v5"/></svg>
+            <span><strong>Chantier propre</strong> sol protégé, déchets repris</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6zM9 12l2 2 4-4"/></svg>
+            <span><strong>Garanties légales</strong> du métier sur les travaux</span>
+          </li>
+        </ul>
+        <p class="trust-note">Engagements donnés à titre d'exemple pour cette démonstration : chaque artisan indique les siens.</p>
+      </div>
+    </section>
+
     <section class="section" id="services" aria-labelledby="t-services">
       <div class="wrap">
-        <p class="eyebrow">Ce que je fais</p>
         <h2 id="t-services">Quatre métiers, un seul artisan</h2>
-        <div class="cards">
-          <article class="card">
-            <img src="img/evier.jpg" width="1400" height="1050" loading="lazy" alt="Réparation sous un évier de cuisine">
-            <div class="card-body">
+        <ul class="services">
+          <li class="reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.700 6.300a4 4 0 0 0-5.400 5.400L3 18l3 3 6.300-6.300a4 4 0 0 0 5.400-5.400l-2.500 2.500-2.400-.6-.6-2.400z"/></svg>
+            <div>
               <h3>Dépannage</h3>
               <p>Fuite, canalisation bouchée, robinet ou chasse d'eau qui coule : diagnostic et réparation, le plus souvent dès la première visite.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="img/salle-de-bain.jpg" width="1400" height="933" loading="lazy" alt="Plombier intervenant sur les arrivées d'eau d'une salle de bain">
-            <div class="card-body">
+          </li>
+          <li class="reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a8 8 0 0 1 16 0zM8 15v2M12 15v4M16 15v2"/></svg>
+            <div>
               <h3>Installation sanitaire</h3>
               <p>Salle de bain, douche, WC, lave-mains, cuisine : pose neuve ou rénovation, raccordements soignés.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="img/chaufferie.jpg" width="1400" height="931" loading="lazy" alt="Local technique avec tuyauteries, vannes et circulateur de chauffage">
-            <div class="card-body">
+          </li>
+          <li class="reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v11H4zM8 6v11M12 6v11M16 6v11M6 20v-3M18 20v-3"/></svg>
+            <div>
               <h3>Chauffage</h3>
               <p>Entretien annuel de chaudière, remplacement, radiateurs, purge et équilibrage du circuit.</p>
             </div>
-          </article>
-          <article class="card">
-            <img src="img/robinet.jpg" width="933" height="1400" loading="lazy" alt="Eau coulant d'un robinet de cuisine dans un verre">
-            <div class="card-body">
+          </li>
+          <li class="reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M7 8h10M12 11.500c1.500 1.800 2.500 3 2.500 4.200a2.500 2.500 0 0 1-5 0c0-1.200 1-2.400 2.500-4.200z"/></svg>
+            <div>
               <h3>Chauffe-eau</h3>
               <p>Remplacement de ballon électrique, groupe de sécurité, détartrage : retrouvez de l'eau chaude rapidement.</p>
             </div>
-          </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt process" aria-labelledby="t-process">
+      <div class="wrap process-in">
+        <figure class="process-img">
+          <img src="img/chaufferie.jpg" width="1400" height="931" loading="lazy" alt="Local technique de chauffage avec tuyauteries, vannes et circulateur">
+        </figure>
+        <div>
+          <h2 id="t-process">Comment ça se passe</h2>
+          <ol class="steps">
+            <li class="reveal"><strong>Vous appelez.</strong> Je réponds moi-même, je vous pose deux ou trois questions et je vous dis quand je peux venir.</li>
+            <li class="reveal"><strong>Je vous donne un devis.</strong> Sur place, par écrit, gratuit. Rien n'est fait sans votre accord.</li>
+            <li class="reveal"><strong>J'interviens et je laisse propre.</strong> Vous payez à la fin, après avoir vérifié que tout fonctionne.</li>
+          </ol>
         </div>
       </div>
     </section>
@@ -95,10 +142,10 @@
     <section class="urgence" id="urgences" aria-labelledby="t-urgences">
       <div class="wrap urgence-in">
         <div>
-          <p class="eyebrow eyebrow-light">Urgences</p>
           <h2 id="t-urgences">Dégât des eaux ? Plus de chauffage ?</h2>
-          <p>Appelez-moi directement : je prends l'appel moi-même. Pour une urgence, je me déplace en journée et le soir, week-end compris.</p>
+          <p>Appelez-moi directement : je prends l'appel moi-même. Pour une urgence, je me déplace tous les jours de 7 h à 22 h, week-end compris.</p>
           <a class="btn btn-call btn-lg" href="tel:+33200000000">Urgence : 02 00 00 00 00</a>
+          <p class="fine">Horaires donnés à titre d'exemple pour cette démonstration.</p>
         </div>
         <div class="reflex">
           <h3>En attendant mon arrivée</h3>
@@ -115,25 +162,31 @@
     <section class="section" id="zone" aria-labelledby="t-zone">
       <div class="wrap zone-in">
         <div>
-          <p class="eyebrow">Où j'interviens</p>
           <h2 id="t-zone">Rennes et 30 km autour</h2>
-          <p>Je me déplace dans toute la métropole rennaise et ses environs. Au-delà, appelez-moi : on regarde ensemble.</p>
-          <ul class="communes">
-            <li>Rennes</li><li>Cesson-Sévigné</li><li>Saint-Grégoire</li><li>Chantepie</li>
-            <li>Bruz</li><li>Pacé</li><li>Betton</li><li>Vern-sur-Seiche</li>
-            <li>Liffré</li><li>Chartres-de-Bretagne</li><li>Mordelles</li><li>Montgermont</li>
-          </ul>
+          <p>Je me déplace dans toute la métropole rennaise et ses environs, de Cesson-Sévigné à Bruz, de Pacé à Vern-sur-Seiche, jusqu'à Liffré et Mordelles. Au-delà de 30 km, appelez-moi : on regarde ensemble.</p>
+          <p class="fine">Autres communes desservies : Chantepie, Chartres-de-Bretagne, Betton, Saint-Grégoire, Montgermont et toutes les communes entre ces points.</p>
         </div>
-        <svg class="radar" viewBox="0 0 320 320" role="img" aria-labelledby="radar-t">
-          <title id="radar-t">Schéma : zone d'intervention de 10, 20 et 30 km autour de Rennes</title>
-          <circle cx="160" cy="160" r="140" class="r3"/>
-          <circle cx="160" cy="160" r="93" class="r2"/>
-          <circle cx="160" cy="160" r="47" class="r1"/>
-          <circle cx="160" cy="160" r="7" class="pt"/>
-          <text x="160" y="146" text-anchor="middle" class="lbl-c">Rennes</text>
-          <text x="160" y="118" text-anchor="middle" class="lbl">10 km</text>
-          <text x="160" y="71" text-anchor="middle" class="lbl">20 km</text>
-          <text x="160" y="24" text-anchor="middle" class="lbl">30 km</text>
+        <svg class="radar reveal" viewBox="0 0 360 360" role="img" aria-labelledby="radar-t">
+          <title id="radar-t">Schéma de la zone d'intervention : Rennes au centre, cercles de 10, 20 et 30 km, communes placées à leur position approximative</title>
+          <circle cx="180" cy="180" r="160" class="r3"/>
+          <circle cx="180" cy="180" r="107" class="r2"/>
+          <circle cx="180" cy="180" r="53" class="r1"/>
+          <text x="180" y="241" text-anchor="middle" class="ring">10 km</text>
+          <text x="180" y="294" text-anchor="middle" class="ring">20 km</text>
+          <text x="180" y="347" text-anchor="middle" class="ring">30 km</text>
+          <g class="dots">
+            <circle cx="212" cy="169" r="4"/><text x="220" y="167">Cesson-Sévigné</text>
+            <circle cx="183" cy="148" r="4"/><text x="191" y="146">Saint-Grégoire</text>
+            <circle cx="148" cy="145" r="4"/><text x="140" y="143" text-anchor="end">Pacé</text>
+            <circle cx="196" cy="129" r="4"/><text x="204" y="127">Betton</text>
+            <circle cx="249" cy="100" r="4"/><text x="257" y="98">Liffré</text>
+            <circle cx="204" cy="199" r="4"/><text x="212" y="203">Chantepie</text>
+            <circle cx="212" cy="228" r="4"/><text x="220" y="232">Vern-sur-Seiche</text>
+            <circle cx="137" cy="239" r="4"/><text x="129" y="243" text-anchor="end">Bruz</text>
+            <circle cx="105" cy="207" r="4"/><text x="97" y="205" text-anchor="end">Mordelles</text>
+          </g>
+          <circle cx="180" cy="180" r="8" class="pt"/>
+          <text x="172" y="198" text-anchor="end" class="city">Rennes</text>
         </svg>
       </div>
     </section>
@@ -144,15 +197,14 @@
           <img src="img/salle-de-bain.jpg" width="1400" height="933" loading="lazy" alt="Plombier au travail dans une salle de bain (photo de banque d'images)" class="artisan-img">
         </figure>
         <div>
-          <p class="eyebrow">L'artisan</p>
           <h2 id="t-artisan">Yann Keranvel, plombier-chauffagiste</h2>
           <p>Indépendant depuis 2012, j'ai fait mes armes en chantiers de rénovation avant de m'installer à mon compte à Rennes. Je travaille seul : la personne qui vous répond au téléphone est celle qui vient chez vous.</p>
           <ul class="values">
             <li><strong>Devis écrit</strong> avant tout travail, sans surprise.</li>
             <li><strong>Propreté</strong> : je protège le sol et je repars en laissant propre.</li>
-            <li><strong>Garantie</strong> sur la main-d'œuvre et les pièces posées.</li>
+            <li><strong>Garanties légales</strong> : parfait achèvement, biennale et décennale selon la nature des travaux.</li>
           </ul>
-          <p class="note">Personnage et parcours fictifs, imaginés pour cette démonstration.</p>
+          <p class="fine">Personnage et parcours fictifs, imaginés pour cette démonstration. SIRET et assurance : à renseigner par l'artisan.</p>
         </div>
       </div>
     </section>
@@ -160,25 +212,26 @@
     <section class="section" id="contact" aria-labelledby="t-contact">
       <div class="wrap contact-in">
         <div>
-          <p class="eyebrow">Contact</p>
           <h2 id="t-contact">Le plus rapide : un coup de fil</h2>
           <a class="phone-big" href="tel:+33200000000">02 00 00 00 00</a>
           <dl class="infos">
-            <dt>Horaires</dt><dd>Lundi–vendredi 8 h–19 h · urgences 7 j/7</dd>
+            <dt>Horaires</dt><dd>Lundi–vendredi 8 h–19 h · urgences 7 j/7, 7 h–22 h</dd>
             <dt>E-mail</dt><dd>contact@exemple.fr</dd>
             <dt>Adresse</dt><dd>12 rue de l'Exemple, 35000 Rennes (adresse fictive)</dd>
           </dl>
         </div>
-        <form id="form" class="form" novalidate>
+        <form id="form" class="form" method="dialog">
           <h3>Ou laissez-moi un message</h3>
+          <p class="form-demo">Démonstration : ce formulaire n'envoie rien.</p>
           <label for="nom">Nom</label>
           <input id="nom" name="nom" type="text" autocomplete="name" required>
           <label for="tel">Téléphone</label>
-          <input id="tel" name="tel" type="tel" autocomplete="tel" required>
+          <input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9 .+()\-]{10,}" title="Un numéro de téléphone, par exemple 06 12 34 56 78" required>
           <label for="msg">Votre besoin</label>
           <textarea id="msg" name="msg" rows="4" required></textarea>
           <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
           <p id="form-status" class="form-status" role="status" tabindex="-1"></p>
+          <noscript><p class="form-status">Ceci est un site de démonstration : aucun message n'est envoyé.</p></noscript>
         </form>
       </div>
     </section>
