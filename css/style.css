@@ -101,7 +101,7 @@ h3{font-size:1.5rem}
 .radar circle{fill:none;stroke:var(--navy-2);stroke-width:2}
 .radar .r3{fill:rgba(19,49,92,.06)}.radar .r2{fill:rgba(19,49,92,.07)}.radar .r1{fill:rgba(19,49,92,.09)}
 .radar .pt{fill:var(--amber);stroke:var(--navy)}
-.radar text{font-family:var(--body);fill:var(--navy)}
+.radar text{font-family:var(--body);fill:var(--navy);stroke:#fff;stroke-width:4px;paint-order:stroke}
 .lbl{font-size:13px}.lbl-c{font-size:15px;font-weight:700}
 
 /* artisan */
